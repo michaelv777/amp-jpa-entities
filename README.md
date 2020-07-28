@@ -1,1 +1,1 @@
-# amp_dev2
+# amp-jpa-entities
