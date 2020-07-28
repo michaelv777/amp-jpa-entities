@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<persistence-unit name="amp-jpa-entities-mysql" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>amp.jpa.entities.Category</class>
+		<class>amp.jpa.entities.Client</class>
+		<class>amp.jpa.entities.ConfigurationtypeM</class>
+		<class>amp.jpa.entities.Credential</class>
+		<class>amp.jpa.entities.Node</class>
+		<class>amp.jpa.entities.Nodeproperty</class>
+		<class>amp.jpa.entities.Nodeshierarchy</class>
+		<class>amp.jpa.entities.NodeshierarchyPK</class>
+		<class>amp.jpa.entities.NodetypeM</class>
+		<class>amp.jpa.entities.OperationtypeM</class>
+		<class>amp.jpa.entities.Parameter</class>
+		<class>amp.jpa.entities.ParametertypeM</class>
+		<class>amp.jpa.entities.RequesttypeM</class>
+		<class>amp.jpa.entities.RequesttypeParameter</class>
+		<class>amp.jpa.entities.ResponsetypeM</class>
+		<class>amp.jpa.entities.ResponsetypeParameter</class>
+		<class>amp.jpa.entities.Source</class>
+		<class>amp.jpa.entities.SourcetypeM</class>
+		<class>amp.jpa.entities.SourcetypeRequesttypeM</class>
+		<class>amp.jpa.entities.SourcetypeResponsetypeM</class>
+		<class>amp.jpa.entities.StatusM</class>
+		<class>amp.jpa.entities.Target</class>
+		<class>amp.jpa.entities.TargettypeM</class>
+		<class>amp.jpa.entities.Thread</class>
+		<class>amp.jpa.entities.ThreadConfiguration</class>
+		<class>amp.jpa.entities.ThreadScopeCredential</class>
+		<class>amp.jpa.entities.Worker</class>
+		<class>amp.jpa.entities.WorkerConfiguration</class>
+		<class>amp.jpa.entities.WorkerData</class>
+		<class>amp.jpa.entities.WorkerThread</class>
+		<class>amp.jpa.entities.WorkerThreadScope</class>
+		
+		<properties>
+			<property name="hibernate.archive.autodetection" value="class" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3307/allmarket" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.connection.password" value="root" />
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="transaction.factory_class" value="org.hibernate.transaction.JDBCTransactionFactory"/>
+			<property name="hibernate.current_session_context_class" value="thread"/> 
+            <!-- <property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.TransactionManagerLookup"/> -->
+		</properties>
+	</persistence-unit>
+        
+</persistence>
