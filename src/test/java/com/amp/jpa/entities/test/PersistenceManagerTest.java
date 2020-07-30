@@ -30,7 +30,7 @@ public class PersistenceManagerTest
 	
 	protected EntityManagerFactory fact = null;
 	
-	protected String dbServerURI = "jdbc:mysql://127.0.0.1:3307/allmarket";
+	protected String dbServerURI = "jdbc:mysql://127.0.0.1:3377/allmarket";
 	/**
 	 * @param name
 	 */
